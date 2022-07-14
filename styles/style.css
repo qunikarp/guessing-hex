@@ -12,6 +12,7 @@ body {
   transition: all ease-in-out 0.3s;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
+  padding: 20px;
 }
 /* Styling navbar */
 header{
@@ -64,7 +65,6 @@ nav ul li a:hover:after{
     height: 100px;
     max-height: 60px;
 }
-
 /* Styling navbar buttons */
 .btn{
     color: #fff;
@@ -85,8 +85,24 @@ nav ul li a:hover:after{
     border-color: #7bff34;
     color: #7bff34;
 }
-
-
+/* Styling website layout */
+.main-content {
+    display: flex;
+}
+.content{
+    flex: 1 1 auto;
+}
+@media (min-width: 768px) {
+    sidebar-1 { order -1};
+    main-content {flex-direction: row;}
+    hg-sidebar {flex: 0 0 260px;}
+}
+.content-logo {
+    opacity: 0.7;
+    order: -1;
+    width: 500px;
+    height: 500px;
+}
 
 
 
