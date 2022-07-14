@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,24 +7,93 @@
 }
 
 body {
-  background-color: #f5f7fa;
+  background-color: #1f1f1f; /* Change to #f5f7fa after dark-mode implementation */
   display: flex;
   transition: all ease-in-out 0.3s;
   min-height: 100vh;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+/* Styling navbar */
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
 }
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+nav ul li{
+    list-style-type: none;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    color: #f5f7fa;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #7bff34;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #7bff34;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+
 .nav-logo{
     margin-top: 20px;
     margin-left: 20px;
-    width: 300px;
+    width: 180px;
     height: 100px;
+    max-height: 60px;
 }
+
+/* Styling navbar buttons */
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #7bff34;
+    border: 2px solid #234a38;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #7bff34;
+    color: #7bff34;
+}
+
+
+
+
+
+
+
 /* Dark/Light mode toggler */
-body.dark-theme {
+/* body.dark-theme {
   background-color: #1f1f1f;
 }
 
@@ -70,5 +139,5 @@ body.dark-theme h2, body.dark-theme p {
 .toggle input[type=checkbox]:checked ~ label::after {
   background-color: #555;
   transform: translateX(50px);
-}
+} */
 
