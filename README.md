@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/qunikarp/guessing-hex">
-    <img src="project-logo.png" alt="Logo" width="80" height="80">
+    <img src="./assets/project-logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center"Guess HEX Code - Game</h3>
