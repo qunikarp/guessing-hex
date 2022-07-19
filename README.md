@@ -76,8 +76,11 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With
 * [![HTML][HTML5]][HTML5-url]
 * [![CSS][CSS3]][CSS3-url]
-* [![JS][JavaScript]][JavaScript-url]
-
+* [![JS][JavaScript]][JavaScript-url] 
+<!--
+to upload
+* [![MSSQL][MS-SQL]][MS-SQL-url]
+* [![Aspnet][ASP.NET]][ASP.NET-url] -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -209,3 +212,7 @@ Project Link: [https://github.com/qunikarp/guessing-hex](https://github.com/quni
 [CSS3-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [JavaScript]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F0DB4F
 [JavaScript-url]: https://developer.mozilla.org/en-US/docs/Web/javascript
+[ASP.NET]:
+[ASP.NET-url]:
+[MS-SQL]:
+[MS-SQL-url]: 

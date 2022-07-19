@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* COLORS
-White: f5f7fa
-Green: 7bff34
-Black: 1f1f1f
-Test color: af4a3f
-*/
 
+:root {
+    --color-primary: #1f1f1f;
+    --color-secondary: #f5f7fa;
+    --color-accent: #7bff34;
+    --color-test: #af4a3f;
+}
 /* Basic properties */
 * {
   box-sizing: border-box;
   margin: 0;
-  padding 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
 }
 body {
@@ -34,6 +34,8 @@ header{
 }
 nav{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 30px 100px;
     width: 100%;
 }
@@ -43,6 +45,9 @@ nav{
 }
 .btn-logging {
     justify-content: right;
+}
+nav ul {
+    justify-items: center;
 }
 nav ul li{
     list-style-type: none;
@@ -114,11 +119,7 @@ a{
     justify-content: center;
     align-items: center;
 }
-@media (min-width: 768px) {
-    sidebar-1 { order -1};
-    main-content {flex-direction: row;}
-    hg-sidebar {flex: 0 0 260px;}
-}
+
 
 /* Styling website content */
 .content-logo {
@@ -146,34 +147,75 @@ a{
 
 
 /* Registration & Login section*/
-.user-login-form {
+.sign-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.user-login-form-element {
-    background-color: #1f1f1f;
-    color: #F5F7FA;
-    display: flex;
+.form {
+    display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-form {
+.form-control {
     display: flex;
     flex-direction: column;
-
 }
-input {
-    background-color: #fff;
-    border: 1px solid #cecdcd;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 90%;
-    border-radius: 8px;
-    
-  }
-  .sign {
-    color: #f5f7fa;
-    font-size: 26px;
-    text-align: center;
-  }
+.sign-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 1.8px;
+    word-spacing: 1.8px;
+    color: var(--color-secondary);
+    font-weight: normal;
+}
+.form-control input {
+    width: 300px;
+    height: 40px;
+    border-radius: 500px;
+    border: 2px solid var(--color-secondary);
+    padding: 0 20px;
+    font-size: 16px;
+    letter-spacing: 1.8px;
+    word-spacing: 1.8px;
+    color: var(--color-accent);
+    font-weight: normal;
+    transition: all .4s ease-in-out;
+    background: transparent;
+}
+label {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: var(--color-secondary);
+}
+
+.sign-btn {
+    border-radius: 20px;
+    color: #1f1f1f;
+    font-size: 12px;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.sign-btn:active {
+    transform: scale(0.95);
+}
+.sign-btn:focus {
+    outline: none;
+}
+.sign-btn:hover {
+    background: transparent;
+    border-color: #7bff34;
+    color: #7bff34;
+}
+/* 
+TODO: trzeba dodać kolory borderów jak ktoś wprowadzi zły input
+TODO: trzeba dodać klasę dla wybranego przycisku
+*/
