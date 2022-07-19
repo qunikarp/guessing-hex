@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/site.css">
+    <title>The HEX Game - Sign in</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar-logo">
+                <img class="nav-logo" href="index.html" src="assets/logo.png"></div>
+            <ul>
+                <li><a href="Project.html">About project</a></li>
+                <li><a href="Authors.html">Authors</a></li>
+                <li>@Html.ActionLink("Main", "Index", "Home", null)</li>
+            </ul>
+            <div class="btn-logging">
+       @Html.ActionLink("Sign up", "Index", "Signup", null, new { @class = "btn sing-up" })
+       @Html.ActionLink("Sign in", "Index", "Signin", null, new { @class = "btn sing-up" })
+            </div>
+        </nav>
+    </header>
+    <div class="user-login-form sign-in-container">
+        <form action="#">
+            <p class="sign">Sign in</p>
+            <div class="user-login-form-element">
+                <input type="text" placeholder="Your nickname" />
+            </div>
+            <div class="user-login-form-element">
+                <input type="password" placeholder="Your password" />
+            </div>
+            <button>Sign in</button>
+            <a href="#">Forgot your password?</a>
+        </form>
+    </div>
+</body>
+</html>
+}

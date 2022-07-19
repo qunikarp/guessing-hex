@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\dark-mode.png" />
+    <Content Remove="wwwroot\assets\favicon.ico" />
+    <Content Remove="wwwroot\assets\light-mode.png" />
+    <Content Remove="wwwroot\assets\logo.png" />
+    <Content Remove="wwwroot\assets\project-logo-transparent.png" />
+    <Content Remove="wwwroot\assets\project-logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\dark-mode.png" />
+    <None Include="wwwroot\assets\favicon.ico" />
+    <None Include="wwwroot\assets\light-mode.png" />
+    <None Include="wwwroot\assets\logo.png" />
+    <None Include="wwwroot\assets\project-logo-transparent.png" />
+    <None Include="wwwroot\assets\project-logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.7" />
+  </ItemGroup>
+
+</Project>
