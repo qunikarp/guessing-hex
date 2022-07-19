@@ -1,0 +1,59 @@
+﻿@model HexGame.AspNetCoreApp.Models.User
+@{
+    Layout = null;
+}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
+            <link rel="stylesheet" href="css/site.css">
+            <title>The HEX Game - Sign up</title>
+    </head>
+    <body>
+            <header>
+                <nav>
+                    <div class="navbar-logo">
+                        <img class="nav-logo" href="index.html" src="assets/logo.png">
+                    </div>
+                    <ul>
+                        <li><a href="Project.html">About project</a></li>
+                        <li><a href="Authors.html">Authors</a></li>
+                        <li>@Html.ActionLink("Main", "Index", "Home", null)</li>
+                    </ul>
+                    <div class="btn-logging">
+               @Html.ActionLink("Sign up", "Index", "Signup", null, new { @class = "btn sing-up" })
+               @Html.ActionLink("Sign in", "Index", "Signin", null, new { @class = "btn sing-up" })
+                    </div>
+                </nav>
+            </header>
+           @using(Html.BeginForm("Index","Signup",FormMethod.Post))
+        {
+            <div class="user-login-form sign-in-container">
+              
+                <form action="#">
+                    <p class="sign">Sign Up</p>
+                   <table class="user-login-form-element" cellpading="0" cellspacing="0">
+                     <td  class="user-login-form-element">Your nickname:</td>
+                     <td class="user-login-form-element">@Html.TextBoxFor(m => m.NickName)</td>
+                     <td class="user-login-form-element">Your email:</td>
+                     <td class="user-login-form-element">@Html.TextBoxFor(m => m.Email)</td>
+                      <td class="user-login-form-element">Your password:</td>
+                     <td class="user-login-form-element">@Html.TextBoxFor(m => m._Password)</td>
+                      <td class="user-login-form-element">Repeat your password</td>
+                     
+                   </table>
+                  <td></td>
+                  <td><input type="submit" value"Submit"/></td>
+                    <a href="#">Forgot your password?</a>
+                </form>
+                
+            </div>
+        }
+    </body>
+    </html>
+    <!-- masz 4 elementy i masz space-between -->
+
