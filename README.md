@@ -154,9 +154,12 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
+Qunikarp: HTML5, CSS3, JS
 Twitter - [@qunikarp](https://twitter.com/qunikarp)<br>
 Email - jakubkarp-kontakt@gmail.com
+
+JakubW99: T-SQL, ASP.net
+GitHub - [JakubW99](https://github.com/JakubW99)
 
 Project Link: [https://github.com/qunikarp/guessing-hex](https://github.com/qunikarp/guessing-hex)
 
