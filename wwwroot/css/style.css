@@ -15,7 +15,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: #1f1f1f; /* Change to #f5f7fa after dark-mode implementation */
+  background-color: var(--color-primary); /* Change to #f5f7fa after dark-mode implementation */
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
@@ -56,12 +56,12 @@ nav ul li{
     padding: 15px;  
 }
 nav ul li a{
-    color: #f5f7fa;
+    color: var(--color-secondary);
     position: relative;
     padding: 5px 0;
 }
 nav ul li a:hover{
-    color: #7bff34;
+    color: var(--color-accent);
 }
 nav ul li a:after{
     content: "";
@@ -69,7 +69,7 @@ nav ul li a:after{
     left: 0;
     width: 0;
     height: 3px;
-    background: #7bff34;
+    background: var(--color-accent);
     transition: .3s;
     bottom: 0;
 }
@@ -87,7 +87,7 @@ a{
 }
 /* Styling navbar buttons */
 .btn{
-    color: #1f1f1f;
+    color: var(--color-primary);
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -97,13 +97,13 @@ a{
     font-weight: 500;
     transition: all .4s ease-in-out;
     background-size: 152% 100%;
-    background: #7bff34;
-    border: 2px solid #7bff34;
+    background: var(--color-accent);
+    border: 2px solid var(--color-accent);
 }
 .btn:hover{
     background: transparent;
-    border-color: #7bff34;
-    color: #7bff34;
+    border-color: var(--color-accent);
+    color: var(--color-accent);
 }
 
 /* Styling website layout */
@@ -130,14 +130,14 @@ a{
     bottom: 100px;
 }
 .content-text {
-    color: #f5f7fa;
+    color: var(--color-secondary);
     padding: 50px 300px;
 }
 .content-title {
     font-size: 90px;
     letter-spacing: 1.8px;
     word-spacing: 1.8px;
-    color: #F5F7FA;
+    color: var(--color-secondary);
     font-weight: normal;
     text-decoration: none;
     font-style: oblique;
@@ -195,7 +195,7 @@ label {
 
 .sign-btn {
     border-radius: 20px;
-    color: #1f1f1f;
+    color: var(--color-primary);
     font-size: 12px;
     padding: 12px 45px;
     letter-spacing: 1px;
@@ -212,10 +212,18 @@ label {
 }
 .sign-btn:hover {
     background: transparent;
-    border-color: #7bff34;
-    color: #7bff34;
+    border-color: var(--color-accent);
+    color: var(--color-accent);
 }
 /* 
 TODO: trzeba dodać kolory borderów jak ktoś wprowadzi zły input
 TODO: trzeba dodać klasę dla wybranego przycisku
 */
+
+/* Styling game.html page */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
