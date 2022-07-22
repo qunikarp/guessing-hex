@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/qunikarp/guessing-hex">
-    <img src="./assets/project-logo.png" alt="Logo" width="80" height="80">
+    <img src="./wwwroot/assets/project-logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center"Guess HEX Code - Game</h3>
@@ -215,6 +215,9 @@ Project Link: [https://github.com/qunikarp/guessing-hex](https://github.com/quni
 [CSS3-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [JavaScript]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F0DB4F
 [JavaScript-url]: https://developer.mozilla.org/en-US/docs/Web/javascript
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [ASP.NET]:
 [ASP.NET-url]:
 [MS-SQL]:
